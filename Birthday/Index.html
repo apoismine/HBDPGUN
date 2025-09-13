@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy Birthday | พี่กัน</title>    
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <main class="wrap">
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="heading">
+                    <h1 class="title">Happy Birthday My Love</h1>
+                    <p class="subtitle">14/09/2025 💖</p>
+                    
+                </div>
+
+               <aside class="photo-card">
+  <div class="photo-frame">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/Gun1.jpg" alt="รูปที่ 1">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/Gun2.jpg" alt="รูปที่ 2">
+      </div>
+      <div class="mySlides fade">
+        <img src="img/Gun3.jpg" alt="รูปที่ 2">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+</aside>
+            </div>
+
+            <div class="actions">
+                        <button class="btn" id="openCard">เปิดการ์ดข้อความ</button>
+                        <button class="btn secondary" id="confettiBtn"></button>
+                        <button class="btn secondary" id="heartsBtn"></button>
+                    </div>
+        </section>
+        
+    </main>
+
+    
+    <!-- Modal Card -->
+    <dialog id="card">
+        <div class="card">
+            <h2>To P'Gun</h2>
+            <div id="cardMsg" class="message">
+✨ Happy Birthday นะคะพี่กัน ✨ 
+ในวันพิเศษของพี่ หนูอยากให้รู้ว่าการมีพี่อยู่ในชีวิตคือของขวัญที่ดีที่สุดสำหรับหนูแล้ว 
+หนูขอให้พี่มีแต่ความสุข และเจอแต่สิ่งดีๆ ในทุกๆวันของชีวิตนะคะ ขอให้พี่ไม่ต้องเจ็บปวดกับเรื่องอะไรอีกก็ตาม รอยยิ้มพี่ดีที่สุดแล้ว!!
+
+ปล. หนูรักพี่นะคะ และไม่ว่าจะยังไงหนูจะอยู่ข้างพี่เสมอตราบเท่าที่พี่ต้องการเลยค่ะ 💕
+            
+            </div>
+            <div class="actions">
+                <button class="btn" id="shakeBtn"></button>
+                <button class="btn secondary" id="closeCard">ปิด</button>
+            </div>
+        </div>
+    </dialog>
+
+    <canvas id="confetti"></canvas>
+    <div id="hearts"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
